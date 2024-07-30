@@ -2,6 +2,7 @@ import 'quill/dist/quill.snow.css'
 import ReactQuill from 'react-quill'
 import { useCallback, useEffect, useRef, useState } from 'react';
 import RefreshIcon from './RefreshIcon';
+import GitHubIcon from './Icons';
 
 function App() {
   const [content, setContent] = useState('');
@@ -142,6 +143,12 @@ function App() {
           </div>
         </div>
       </div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '50px' }}>
+        <a style={{ padding: '10px', display: 'flex', alignItems: 'center', flexDirection:"column", textDecoration:"none" }} href="https://github.com/Felipao22" target="_blank" rel="noreferrer">
+          <GitHubIcon />
+          <strong style={{ color:"black", marginLeft: '10px' }}>Felipe Aviani</strong>
+        </a>
       </div>
     </>
   )
